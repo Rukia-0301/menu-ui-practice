@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオサイト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="#">LOGO</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">top</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#">footer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="mv">
+    <h2>Mainvisual</h2>
+  </div>
+  <main>
+    <div id="profile">
+      <div class="menu">
+        <ul>
+          <li><a href="#" class="active" data-id="about">About</a></li>
+          <li><a href="#" data-id="works">Works</a></li>
+          <li><a href="#" data-id="contact">Contact</a></li>
+        </ul>
+      </div>
+      <section class="content container active" id="about">
+        <div class="intro">
+          <div class="icon">photo</div>
+          <div class="info">
+            <h3 class="profile-name">Hanako Yamada</h3>
+            <h3 class="profile-role">フロントエンドエンジニア志望</h3>
+            <dl class="profile-meta">
+              <div class="profile-location">
+                <dt>Location</dt>
+                <dd>大阪</dd>
+              </div>
+              <div class="profile-focus">
+                <dt>Focus</dt>
+                <dd>HTML / CSS / JavaScript</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="profile-text">
+          <h3>About Me</h3>
+          <p class="dummy-text">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
+          <p class="dummy-text">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
+        </div>
+      </section>
+      <section class="content container" id="works">
+        <div class="works-grid">
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+          <div class="works-item">
+            <a href="#">
+              <div class="thumbnail">
+                <div class="thumbnail-img"></div>
+              </div>
+              <h3>サイトのタイトル</h3>
+              <p>サイトの説明。</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="content container" id="contact">
+        <form>
+          <label class="name">
+            <span>Name</span>
+            <input type="text" placeholder="お名前">
+          </label>
+          <label class="email">
+            <span>E-mail</span>
+            <input type="email" placeholder="メールアドレス">
+          </label>
+          <label class="message">
+            <span>Message</span>
+            <textarea name="message" placeholder="メッセージを記入してください"></textarea>
+          </label>
+          <div class="contact-btn">
+            <button type="submit">送信</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <small>&copy;Rukia</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
