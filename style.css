@@ -54,6 +54,14 @@ header li a:hover {
   background: #555;
 }
 
+.sp-menu {
+  display: none;
+}
+
+.sp-overlay {
+  display: none;
+}
+
 /* mv */
 .mv {
   flex-shrink: 0;
@@ -304,4 +312,138 @@ footer small {
   color: #fff;
   line-height: 24px;
   font-size: 12px;
+}
+
+@media (max-width: 599px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header a {
+    line-height: 50px;
+  }
+
+  .pc-menu {
+    display: none;
+  }
+
+  /* humburger */
+  .sp-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    gap: 8px;
+    cursor: pointer;
+    padding: 14px 0;
+    z-index: 3;
+    margin-left: auto;
+  }
+
+  .sp-menu span {
+    display: inline-block;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    transition: .3s;
+  }
+
+  .sp-menu.open .line-1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .sp-menu.open .line-2 {
+    opacity: 0;
+  }
+
+  .sp-menu.open .line-3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* overlay */
+  .sp-overlay {
+    background: rgba(20, 20, 20, .8);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    z-index: 2;
+  }
+
+  .sp-overlay .nav-items {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 60px;
+  }
+
+  .sp-overlay .nav-items a {
+    font-size: 1.1rem;
+    line-height: 42px;
+  }
+
+  .sp-overlay .nav-items li {
+    opacity: 0;
+    transform: translate(-16px);
+  }
+
+  .sp-overlay.open .nav-items li {
+    opacity: 1;
+    transform: none;
+    transition: .2s;
+  }
+
+  .sp-overlay .nav-items li:nth-child(2) {
+    margin-left: 20px;
+  }
+  .sp-overlay .nav-items li:nth-child(3) {
+    margin-left: 45px;
+  }
+  .sp-overlay .nav-items li:nth-child(4) {
+    margin-left: 75px;
+  }
+
+  .sp-overlay.open .nav-items li:nth-child(1) {
+    transition-delay: .3s;
+  }
+  .sp-overlay.open .nav-items li:nth-child(2) {
+    margin-left: 20px;
+    transition-delay: .4s;
+  }
+  .sp-overlay.open .nav-items li:nth-child(3) {
+    margin-left: 45px;
+    transition-delay: .5s;
+  }
+
+  .sp-overlay.open .nav-items li:nth-child(4) {
+    margin-left: 75px;
+    transition-delay: .6s;
+  }
+
+  .sp-overlay .nav-items a:hover {
+    background: none;
+    color: royalblue;
+  }
+
+  .sp-overlay {
+    display: block;
+    transform: translate(300px, -300px);
+    transition: transform .4s;
+  }
+
+  .sp-overlay.open {
+    transform: none;
+  }
+
+  /* mv */
+  .mv h2 {
+    font-size: 1.7rem;
+  }
+
+  /* main */
+  #profile .menu {
+    display: none;
+  }
 }

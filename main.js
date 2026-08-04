@@ -4,6 +4,8 @@
   const menuItems = document.querySelectorAll('.menu ul li a');
   const contents = document.querySelectorAll('.content');
   const navItems = document.querySelectorAll('.nav-items .nav-item');
+  const spMenu = document.querySelector('.sp-menu');
+  const spOverlay = document.querySelector('.sp-overlay');
 
   const switchTab = (id) => {
     menuItems.forEach((item) => {
@@ -29,6 +31,11 @@
     item.addEventListener('click', (e) => {
       switchTab(item.dataset.id);
     });
+  });
+
+  spMenu.addEventListener('click', () => {
+    spMenu.classList.toggle('open');
+    spOverlay.classList.toggle('open');
   });
 
   // menuItem.forEach((item) => {
