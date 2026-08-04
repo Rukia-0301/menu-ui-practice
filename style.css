@@ -20,6 +20,7 @@ header {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  position: fixed;
 }
 
 header h1 {
@@ -56,7 +57,7 @@ header li a:hover {
 .mv {
   flex-shrink: 0;
   background: linear-gradient(140deg, royalblue, violet);
-  height: calc(100vh - 64px);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,6 +117,10 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#profile section {
+  min-height: 700px;
 }
 
 #profile .content {
