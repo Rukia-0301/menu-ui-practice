@@ -25,9 +25,9 @@
     <div class="sp-overlay">
       <ul class="nav-items">
         <li><a href="#">Top</a></li>
-        <li><a href="#profile" class="nav-item" data-id="about">About</a></li>
-        <li><a href="#profile" class="nav-item" data-id="works">Works</a></li>
-        <li><a href="#profile" class="nav-item" data-id="contact">Contact</a></li>
+        <li><a href="#about" class="nav-item" data-id="about">About</a></li>
+        <li><a href="#works" class="nav-item" data-id="works">Works</a></li>
+        <li><a href="#contact" class="nav-item" data-id="contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -36,119 +36,127 @@
   </div>
   <main>
     <div id="profile">
-      <div class="menu">
+      <div class="profile__tab-menu">
         <ul>
           <li><a href="#" class="active" data-id="about">About</a></li>
           <li><a href="#" data-id="works">Works</a></li>
           <li><a href="#" data-id="contact">Contact</a></li>
         </ul>
       </div>
-      <section class="content container active" id="about">
-        <div class="intro">
-          <div class="icon">photo</div>
-          <div class="info">
-            <h3 class="profile-name">Hanako Yamada</h3>
-            <h3 class="profile-role">フロントエンドエンジニア志望</h3>
-            <dl class="profile-meta">
-              <div class="profile-location">
+      <section class="profile__content container active" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__intro">
+          <div class="about__icon">photo</div>
+          <div class="about__info">
+            <h3 class="about__profile-name">Hanako Yamada</h3>
+            <p class="about__profile-role">フロントエンドエンジニア志望</p>
+            <dl class="about__profile-meta">
+              <div>
                 <dt>Location</dt>
                 <dd>大阪</dd>
               </div>
-              <div class="profile-focus">
+              <div>
                 <dt>Focus</dt>
                 <dd>HTML / CSS / JavaScript</dd>
               </div>
             </dl>
           </div>
         </div>
-        <div class="profile-text">
+        <div class="about__profile-text">
           <h3>About Me</h3>
-          <p class="dummy-text">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
-          <p class="dummy-text">ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
+          <p>ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
+          <p>ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。ダミーテキスト。</p>
         </div>
       </section>
-      <section class="content container" id="works">
-        <div class="works-grid">
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
+      <section class="profile__content container" id="works">
+        <h2 class="section-title">Works</h2>
+        <div class="works__wrapper">
+          <div class="works__grid">
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
+            <div class="works__item">
+              <a href="#">
+                <div class="works__thumbnail">
+                  <div class="works__thumbnail-img"></div>
+                </div>
+                <h3>サイトのタイトル</h3>
+                <p>サイトの説明。</p>
+              </a>
+            </div>
           </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
-          </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
-          </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
-          </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
-          </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
-          </div>
-          <div class="works-item">
-            <a href="#">
-              <div class="thumbnail">
-                <div class="thumbnail-img"></div>
-              </div>
-              <h3>サイトのタイトル</h3>
-              <p>サイトの説明。</p>
-            </a>
+          <div class="works__more-btn">
+            <button type="button">View more</button>
           </div>
         </div>
       </section>
-      <section class="content container" id="contact">
-        <form>
-          <label class="name">
+      <section class="profile__content container" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
+          <label class="contact-form__name">
             <span>Name</span>
-            <input type="text" placeholder="お名前">
+            <input type="text" placeholder="お名前" required>
           </label>
-          <label class="email">
+          <label class="contact-form__email">
             <span>E-mail</span>
-            <input type="email" placeholder="メールアドレス">
+            <input type="email" placeholder="メールアドレス" required>
           </label>
-          <label class="message">
+          <label class="contact-form__message">
             <span>Message</span>
-            <textarea name="message" placeholder="メッセージを記入してください"></textarea>
+            <textarea name="message" placeholder="メッセージを記入してください"></textarea required>
           </label>
-          <div class="contact-btn">
+          <div class="contact-form__send-btn">
             <button type="submit">送信</button>
           </div>
         </form>

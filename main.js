@@ -1,11 +1,13 @@
 'use strict';
 
 {
-  const menuItems = document.querySelectorAll('.menu ul li a');
-  const contents = document.querySelectorAll('.content');
+  const menuItems = document.querySelectorAll('.profile__tab-menu ul li a');
+  const contents = document.querySelectorAll('.profile__content');
   const navItems = document.querySelectorAll('.nav-items .nav-item');
   const spMenu = document.querySelector('.sp-menu');
   const spOverlay = document.querySelector('.sp-overlay');
+  const works = document.querySelector('.works__wrapper');
+  const worksMoreBtn = document.querySelector('.works__more-btn button');
 
   const switchTab = (id) => {
     menuItems.forEach((item) => {
@@ -15,7 +17,7 @@
       content.classList.remove('active');
     });
 
-    document.querySelector(`.menu ul li a[data-id="${id}"]`).classList.add('active');
+    document.querySelector(`.profile__tab-menu ul li a[data-id="${id}"]`).classList.add('active');
     document.querySelector(`#${id}`).classList.add('active');
   }
 
@@ -38,18 +40,8 @@
     spOverlay.classList.toggle('open');
   });
 
-  // menuItem.forEach((item) => {
-  //   item.addEventListener('click', (e) => {
-  //     e.preventDefault();
-  //     menuItem.forEach((item) => {
-  //       item.classList.remove('active');
-  //     });
-  //     item.classList.add('active');
-
-  //     contents.forEach((content) => {
-  //       content.classList.remove('active');
-  //     });
-  //     document.querySelector('#' + item.dataset.id).classList.add('active');
-  //   });
-  // });
+  worksMoreBtn.addEventListener('click', () => {
+    works.classList.toggle('open');
+    worksMoreBtn.textContent = works.classList.contains('open') ? 'View less' : 'View more';
+  });
 }
