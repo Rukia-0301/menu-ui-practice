@@ -550,6 +550,7 @@ footer small {
 
   .works__wrapper.open .works__item:nth-child(n + 4) {
     display: block;
+    animation: works-slideUp .3s;
   }
 
   .works__more-btn {
@@ -571,6 +572,18 @@ footer small {
 
   .works__wrapper.open .works__more-btn button::after {
     content: " ↑";
+  }
+
+  @keyframes works-slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   /* contact */
